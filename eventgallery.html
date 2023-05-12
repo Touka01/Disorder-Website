@@ -1,118 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Event Gallery</title>
-   <link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <title>Event Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial;
-}
+    body {
+      margin: 0;
+      font-family: Arial;
+    }
 
-/* The grid Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 1px;
-}
+    /* The grid Four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 1px;
+    }
 
-/* Styled images insdie the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
+    /* Styled images inside the grid */
+    .column img {
+      opacity: 0.8; 
+      cursor: pointer; 
+    }
 
-.column img:hover {
-  opacity: 1;
-}
+    .column img:hover {
+      opacity: 1;
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-</style>
+    /* The expanding image container */
+    .container {
+      position: relative;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-
-<!-- The four columns -->
-<div class="row">
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
-        <ul>
-          <li><a href="index.html">Home Page</a></li>
-            <li><a href="tweets2.html">Location</a></li>
-            <li><a href="contactus.html">Contact us</a></li>
-            <li><a href="login.html">login</a></li>
-        </ul>
+  <div class="row">
+    <nav class="navbar">
+      <a href="index.html"><img src="images/logo.png" class="logo" alt="logo"></a>
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="tweets2.html">Location</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="images/red1.jpg" style="width:100%" onclick="myFunction(this);" alt="red1">
     </div>
     <div class="column">
-    <img src="images/red1.jpg" style="width:100%" onclick="myFunction(this);" alt="red1">
+      <img src="images/red2.jpg" style="width:100%" onclick="myFunction(this);" alt="red2">
+    </div>
+    <div class="column">
+      <img src="images/red3.jpg" style="width:100%" onclick="myFunction(this);" alt="red3">
+    </div>
+    <div class="column">
+      <img src="images/red4.jpg" style="width:100%" onclick="myFunction(this);" alt="red4">
+    </div>
+    <div class="column">
+      <img src="images/green1.jpg" style="width:100%" onclick="myFunction(this);" alt="green1">
+    </div>
+    <div class="column">
+      <img src="images/green2.jpg" style="width:100%" onclick="myFunction(this);" alt="green2">
+    </div>
+    <div class="column">
+      <img src="images/green3.jpg" style="width:100%" onclick="myFunction(this);" alt="green3">
+    </div>
+    <div class="column">
+      <img src="images/green4.jpg" style="width:100%" onclick="myFunction(this);" alt="green4">
+    </div>
+    <div class="column">
+      <img src="images/purple1.jpg" style="width:100%" onclick="myFunction(this);" alt="purple1">
+    </div>
+    <div class="column">
+      <img src="images/purple2.jpg" style="width:100%" onclick="myFunction(this);" alt="purple2">
+    </div>
+    <div class="column">
+      <img src="images/purple3.jpg" style="width:100%" onclick="myFunction(this);" alt="purple3">
+    </div>
+    <div class="column">
+      <img src="images/purple4.jpg" style="width:100%" onclick="myFunction(this);" alt="purple4">
+    </div>
   </div>
-  <div class="column">
-    <img src="images/red2.jpg" style="width:100%" onclick="myFunction(this);" alt="red2">
-  </div>
-  <div class="column">
-    <img src="images/red3.jpg" style="width:100%" onclick="myFunction(this);" alt="red3">
-  </div>
-  <div class="column">
-    <img src="images/red4.jpg" style="width:100%" onclick="myFunction(this); " alt="red4">
-  </div>
-  <div class="column">
-    <img src="images/green1.jpg" style="width:100%" onclick="myFunction(this);" alt="green1">
-  </div>
-  <div class="column">
-    <img src="images/green2.jpg" style="width:100%" onclick="myFunction(this);" alt="green2">
-  </div>
-  <div class="column">
-    <img src="images/green3.jpg" style="width:100%" onclick="myFunction(this);" alt="green3">
-  </div>
-  <div class="column">
-    <img src="images/green4.jpg" style="width:100%" onclick="myFunction(this);" alt="green4">
-  </div>
-  <div class="column">
-    <img src="images/purple1.jpg" style="width:100%" onclick="myFunction(this);" alt="purple1">
-  </div>
-  <div class="column">
-    <img src="images/purple2.jpg" style="width:100%" onclick="myFunction(this);" alt="purple2">
-  </div>
-  <div class="column">
-    <img src="images/purple3.jpg" style="width:100%" onclick="myFunction(this);" alt="purple3">
-  </div>
-  <div class="column">
-    <img src="images/purple4.jpg" style="width:100%" onclick="myFunction(this);" alt="purple4">
-  </div>
-</div>
 
-<div class="container">
-  <img id="expandedImg" style="width:100%" alt="expandedimg">
-  <div id="imgtext"></div>
-</div>
+  <div class="container">
+    <img id="expandedImg" style="width:100%" alt="expandedimg">
+    <div id="imgtext"></div>
+  </div>
 
-<script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
-
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+  </script>
 </body>
 </html>

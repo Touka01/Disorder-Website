@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- The fb-root div used by Facebook SDK -->
-    <div id="fb-root"></div>
-    <body>
-        <header>
-            <!-- head of the HTML -->
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <title>Disorder</title>
-              <link rel="stylesheet" href="style.css">
-              <!-- The navbar section contains the logo and navigation links -->
-              <div class="navbar">
-                  <a href="https://www.instagram.com/disorder.dc/" target="_blank"><img src="images/logo.png" class="logo" alt="logo"></a>
-                  <ul>
-                      <li><a href="tweets2.html">Location</a></li>
-                      <li><a href="contactus.html">Contact us</a></li>
-                      <li><a href="login.html">login</a></li>
-                  </ul>
-                  </div>
-              </header>
-              <main>
-                <article>
-                    <!-- The script tag loads the Facebook SDK -->
-       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="l5avKYzj"></script>
-       <div class="body">
-           <!-- content = main content of the webpage -->
-           <div class="content">
-           <h1>Disorder Awaits you</h1>
-               <p>Check out our latest booked DJs and euphorical moments below</p>
-               <div>
-                   <a href="residentdjs2.html"> 
-                   <button type="button">Booked DJ's </button> </a> 
-                   <a href="eventgallery.html">
-                   <button type="button">Event Gallery </button> </a>
-                   <div class="row">
-                  <div class="col">
-                      <div class="feature-imgmain">
-                          <!-- The video -->
-                          <video controls autoplay loop muted src="videos/Outro.mp4"  width="390"> </video> 
-                      </div>
-                  </div>
-               </div>
-               </div>
-           </div>
-       </div>
-                </article>
-            </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disorder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="https://www.instagram.com/disorder.dc/" target="_blank"><img src="images/logo.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="tweets2.html">Location</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div class="content">
+                <h1>Disorder Awaits You</h1>
+                <p>Check out our latest booked DJs and euphoric moments below</p>
+                <div>
+                    <a href="residentdjs2.html">
+                        <button type="button">Booked DJs</button>
+                    </a>
+                    <a href="eventgallery.html">
+                        <button type="button">Event Gallery</button>
+                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <div class="feature-imgmain">
+                                <!-- The video -->
+                                <video controls autoplay loop muted src="videos/Outro.mp4" width="390"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
 </body>
 </html>
